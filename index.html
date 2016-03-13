@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!--
+        Metas / Title
+        ----------------------------------------------------->
+        <meta charset="utf-8">
+        <title>EKH</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Emily Huynh is a student at The University of Alabama majoring in Computer Science
+                                        and minoring in Mathematics and Advertising.">
+        <meta name="author" content="Emily Huynh">
+
+        <!--
+        Styles
+        ----------------------------------------------------->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-bottom navigation">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand nav-title">emily<span style="color: #7f7f7f">kim</span>huynh</a>
+
+                <ul class="nav navbar-nav navbar-right main-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Photography</a></li>
+                    <li><a href="#">Art & Design</a></li>
+                    <li><a href="#">Code</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section class="parallax intro">
+                <div class="container">
+
+                </div>
+            </section>
+
+            <section class="scrolling about" id="about">
+                <div class="container">
+                    <div class="col-md-4">
+                        <img src="img/profile.jpg" style="width: 100%">
+                    </div>
+
+                        <div class="col-md-6">
+                            <p class="lead">About</p>
+                            <p>
+                                Hi, I'm Emily! I'm in my third year of undergraduate
+                                study at The University of Alabama. I'm majoring in
+                                Computer Science and minoring in Mathematics and
+                                Advertising. I plan to finish my undergraduate degree
+                                in May 2017 and my MBA in May 2018.
+                            </p>
+                            <p>
+                                I am passionate about music and design. In my free time,
+                                I love to play piano, take photographs, and create art.
+                            </p>
+                            <p class="lead">Skills</p>
+                            <p>
+                                <strong>Programming Languages</strong>
+                                C, Java, C#, HTML, CSS, Python
+                            </p>
+                            <p>
+                                <strong>Software</strong>
+                                Adobe Photoshop, Illustrator, InDesign, Lightroom, Premiere;
+                                Visual Studio
+                            </p>
+                            <p>
+                                <strong>Other</strong>
+                                Photography, WordPress, Graphic Design
+                            </p>
+                        </div>
+                        <!-- <div class="col-md-2">
+                            skills here
+                        </div> -->
+                </div>
+            </section>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
+        <script type="text/javascript">
+            $('a[href*=#]').click(function(event){
+                $('html, body').animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top
+                }, 500);
+                event.preventDefault();
+            });
+
+        </script>
+    </body>
+</html>

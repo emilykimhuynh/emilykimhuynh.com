@@ -1,0 +1,60 @@
+/*
+*
+*   emilykimhuynh.com
+*   Stylesheet
+*   March 2016
+*
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,500|Raleway:400,300,500,600);
+
+/*
+    Full page spreads
+*/
+
+body, html, main {
+    height: 100%;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+.parallax {
+    min-height: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.scrolling {
+    min-height: 50%;
+}
+
+.intro {
+    background-image: url("img/philly.jpg");
+    min-height: 100%;
+}
+
+.navigation {
+    background: rgba(255, 255, 255, .95);
+    /*background: #ffffff;*/
+    padding: 1% 5%;
+}
+
+.nav-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #404040 !important;
+}
+
+.main-links {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+}
+
+.about {
+    margin: 10% 0;
+}
