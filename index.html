@@ -36,9 +36,11 @@
         </nav>
         <main>
             <section class="parallax intro">
-                <div class="container">
+                <div class="container intro1">
 
                 </div>
+                <!-- <div class="container intro2">
+                </div> -->
             </section>
 
             <section class="scrolling about" id="about">
@@ -54,7 +56,8 @@
                                 study at The University of Alabama. I'm majoring in
                                 Computer Science and minoring in Mathematics and
                                 Advertising. I plan to finish my undergraduate degree
-                                in May 2017 and my MBA in May 2018.
+                                in May 2017 and my MBA in May 2018. This summer, I will
+                                be interning in web development at MasterCard.
                             </p>
                             <p>
                                 I am passionate about music and design. In my free time,
@@ -80,7 +83,20 @@
                         </div> -->
                 </div>
             </section>
+
+            <section class="parallax photog">
+                <div class="container">
+                    <!-- moo -->
+                </div>
+            </section>
+            <section class="scrolling contact">
+                <div class="container">
+                    <h1>Get in touch</h1>
+                </div>
+            </section>
+
         </main>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
         <script src="js/bootstrap.js"></script>
@@ -93,7 +109,20 @@
                 }, 500);
                 event.preventDefault();
             });
+            $(function() {
 
+                $("#slideshow > div:gt(0)").hide();
+
+                setInterval(function() {
+                  $('#slideshow > div:first')
+                    .fadeOut(1000)
+                    .next()
+                    .fadeIn(1000)
+                    .end()
+                    .appendTo('#slideshow');
+                },  3000);
+
+            });
         </script>
     </body>
 </html>
