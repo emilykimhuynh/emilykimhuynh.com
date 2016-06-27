@@ -10,7 +10,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Emily Huynh is a student at The University of Alabama majoring in Computer Science
-                                        and minoring in Mathematics and Advertising.">
+                                            and minoring in Mathematics and Advertising.">
         <meta name="author" content="Emily Huynh">
 
         <!--
@@ -18,25 +18,31 @@
         ----------------------------------------------------->
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     </head>
     <body>
+
         <nav class="navbar navbar-default navbar-fixed-bottom navigation">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand nav-title">emily<span style="color: #7f7f7f">kim</span>huynh</a>
 
                 <ul class="nav navbar-nav navbar-right main-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Photography</a></li>
-                    <li><a href="#">Art & Design</a></li>
+                    <li><a href="#photog">Photography</a></li>
+                    <li><a href="#art">Art & Design</a></li>
                     <li><a href="#">Code</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <main>
+
+            <!--
+            Intro section
+            ----------------------------------------------------->
             <section class="parallax intro">
-                <div class="container intro1">
+                <div class="container-fluid">
 
                 </div>
                 <!-- <div class="container intro2">
@@ -84,31 +90,135 @@
                 </div>
             </section>
 
-            <section class="parallax photog">
+            <!--
+            Photography section
+            ----------------------------------------------------->
+            <section class="parallax photog" id="photog">
                 <div class="container">
-                    <!-- moo -->
+                    <h2>I take photos.</h2>
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"><img src="img/firenze.jpg"></div>
+                        <div class="grid-item"><img src="img/sarah.jpg"></div>
+                        <div class="grid-item"><img src="img/cabo.jpg"></div>
+                        <div class="grid-item"><img src="img/franklin.jpg"></div>
+                        <div class="grid-item"><img src="img/rachel.jpg"></div>
+                        <div class="grid-item"><img src="img/philly.jpg"></div>
+                        <div class="grid-item"><img src="img/bri.jpg"></div>
+                        <div class="grid-item"><img src="img/venezia3.jpg"></div>
+                        <div class="grid-item"><img src="img/firenze2.jpg"></div>
+                        <div class="grid-item"><img src="img/venezia.jpg"></div>
+                        <div class="grid-item"><img src="img/venezia2.jpg"></div>
+                        <div class="grid-item"><img src="img/sarah2.jpg"></div>
+                        
+
+                    </div>
+                    <!--
+                    <p style="text-align: center; margin: 20px 0">more <span class="fa fa-long-arrow-right"></span></p>
+                    -->
                 </div>
             </section>
+
+            <!--
+            Art & Design section
+            ----------------------------------------------------->
+            <section class="scrolling art" id="art">
+                <div class="container">
+                    <h2>I'm a designer.</h2>
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"><img src="img/art/TypeSpecimenMyriad-01.png"></div>
+                        <div class="grid-item"><img src="img/art/CK-Tshirt-01.png"></div>
+                        <div class="grid-item"><img src="img/art/infographic-01.png"></div>
+                        <div class="grid-item"><img src="img/art/CK2016InfoCard.png"></div>
+                        <div class="grid-item"><img src="img/art/bb_4x6.png"></div>
+                        <div class="grid-item"><img src="img/art/sw_1.png"></div>
+                        <div class="grid-item"><img src="img/art/sw_2.png"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--
+            Contact section
+            ----------------------------------------------------->
             <section class="scrolling contact">
                 <div class="container">
-                    <h1>Get in touch</h1>
+                    <h2>Let's get in touch.</h1>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <p>
+                                <span style="width: 40px" class="fa fa-envelope"></span>
+                                hello@emilykimhuynh.com
+                            </p>
+                            <p>
+                                <span style="width: 40px" class="fa fa-linkedin"></span>
+                                <span style="color: #7f7f7f;">linkedin.com/in/</span>emilykimhuynh
+                            </p>
+                            <p>
+                                <span style="width: 40px" class="fa fa-github"></span>
+                                <span style="color: #7f7f7f;">github.com/</span>emilykimhuynh
+                            </p>
+                            <p>
+                                <span style="width: 40px" class="fa fa-instagram"></span>
+                                <span style="color: #7f7f7f;">instagram.com/</span>emilykimhuynh
+                            </p>
+                            <p>
+                                <span style="width: 40px" class="fa fa-twitter"></span>
+                                <span style="color: #7f7f7f;">twitter.com/</span>emilykimhuynh
+                            </p>
+                            <p>
+                                <span style="width: 40px" class="fa fa-pinterest"></span>
+                                <span style="color: #7f7f7f;">pinterest.com/</span>emilykimhuynh
+                            </p>
+                        </div>
+                        <div class="col-md-7">
+                            <div id="instafeed"></div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
         </main>
 
+        <!--
+        Scripts
+        ----------------------------------------------------->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="js/masonry.pkgd.min.js"></script>
+
+        <!-- Instafeed -->
+        <script src="js/instafeed.min.js"></script>
         <script type="text/javascript">
+            var feed = new Instafeed({
+            get: 'user',
+            // clientId: '3b1848b449134bf3a729d7d66f8780bf',
+            userId: '145082229',
+            // accessToken: '145082229.467ede5.69d79deb01db4acd82956b127a5626c9',
+            accessToken: '145082229.1677ed0.28817a39f8f443fa8cb51367193f25fd',
+            limit: 8,
+            template: '<a href="{{link}}"><img class="feed-img" src="{{image}}" /></a>'
+         });
+         feed.run();
+        </script>
+
+        <!-- Masonry -->
+        <script type="text/javascript">
+            $('.grid').masonry({
+              itemSelector: '.grid-item',
+              columnWidth: '.grid-sizer',
+              percentPosition: true,
+            });
+
+
             $('a[href*=#]').click(function(event){
                 $('html, body').animate({
                     scrollTop: $( $.attr(this, 'href') ).offset().top
                 }, 500);
                 event.preventDefault();
             });
+
             $(function() {
 
                 $("#slideshow > div:gt(0)").hide();
@@ -124,5 +234,7 @@
 
             });
         </script>
+
+
     </body>
 </html>
