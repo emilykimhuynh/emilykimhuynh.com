@@ -58,12 +58,11 @@
                         <div class="col-md-6">
                             <p class="lead">About</p>
                             <p>
-                                Hi, I'm Emily! I'm in my third year of undergraduate
-                                study at The University of Alabama. I'm majoring in
+                                Hi, I'm Emily! I'm a senior at The University of Alabama. I'm majoring in
                                 Computer Science and minoring in Mathematics and
                                 Advertising. I plan to finish my undergraduate degree
-                                in May 2017 and my MBA in May 2018. This summer, I will
-                                be interning in web development at MasterCard.
+                                in May 2017 and my MBA in May 2018. This summer, I'm interning as
+                                a software developer for MasterCard.
                             </p>
                             <p>
                                 I am passionate about music and design. In my free time,
@@ -110,7 +109,7 @@
                         <div class="grid-item"><img src="img/venezia.jpg"></div>
                         <div class="grid-item"><img src="img/venezia2.jpg"></div>
                         <div class="grid-item"><img src="img/sarah2.jpg"></div>
-                        
+
 
                     </div>
                     <!--
@@ -147,28 +146,40 @@
                     <div class="row">
                         <div class="col-md-5">
                             <p>
+                                <a href="mailto:hello@emilykimhuynh.com">
                                 <span style="width: 40px" class="fa fa-envelope"></span>
                                 hello@emilykimhuynh.com
+                                </a>
                             </p>
                             <p>
+                                <a href="http://linkedin.com/in/emilykimhuynh">
                                 <span style="width: 40px" class="fa fa-linkedin"></span>
                                 <span style="color: #7f7f7f;">linkedin.com/in/</span>emilykimhuynh
+                                </a>
                             </p>
                             <p>
+                                <a href="http://github.com/emilykimhuynh">
                                 <span style="width: 40px" class="fa fa-github"></span>
                                 <span style="color: #7f7f7f;">github.com/</span>emilykimhuynh
+                                </a>
                             </p>
                             <p>
+                                <a href="http://instagram.com/emilykimhuynh">
                                 <span style="width: 40px" class="fa fa-instagram"></span>
                                 <span style="color: #7f7f7f;">instagram.com/</span>emilykimhuynh
+                                </a>
                             </p>
                             <p>
+                                <a href="http://twitter.com/emilykimhuynh">
                                 <span style="width: 40px" class="fa fa-twitter"></span>
                                 <span style="color: #7f7f7f;">twitter.com/</span>emilykimhuynh
+                                </a>
                             </p>
                             <p>
+                                <a href="http://pinterest.com/emilykimhuynh">
                                 <span style="width: 40px" class="fa fa-pinterest"></span>
                                 <span style="color: #7f7f7f;">pinterest.com/</span>emilykimhuynh
+                                </a>
                             </p>
                         </div>
                         <div class="col-md-7">
@@ -187,6 +198,7 @@
         <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
         <script src="bootstrap/js/bootstrap.js"></script>
         <script src="js/masonry.pkgd.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 
         <!-- Instafeed -->
         <script src="js/instafeed.min.js"></script>
@@ -205,12 +217,15 @@
 
         <!-- Masonry -->
         <script type="text/javascript">
-            $('.grid').masonry({
-              itemSelector: '.grid-item',
-              columnWidth: '.grid-sizer',
-              percentPosition: true,
-            });
+            var masonryGrid = $('.grid');
 
+            masonryGrid.imagesLoaded().done(function() {
+                masonryGrid.masonry({
+                  itemSelector: '.grid-item',
+                  columnWidth: '.grid-sizer',
+                  percentPosition: true,
+                });
+            });
 
             $('a[href*=#]').click(function(event){
                 $('html, body').animate({
