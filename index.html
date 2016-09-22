@@ -61,17 +61,22 @@
                                 Hi, I'm Emily! I'm a senior at The University of Alabama. I'm majoring in
                                 Computer Science and minoring in Mathematics and
                                 Advertising. I plan to finish my undergraduate degree
-                                in May 2017 and my MBA in May 2018. This summer, I'm interning as
-                                a software developer for MasterCard.
+                                in May 2017 and my MBA in May 2018. Last summer, I interned as
+                                a software engineer for Mastercard. My primary areas of interest lie in
+                                front end software engineering, technical consulting, and project management.
                             </p>
                             <p>
                                 I am passionate about music and design. In my free time,
                                 I love to play piano, take photographs, and create art.
                             </p>
+                            <p>
+                                If you think my skills fit your needs, feel free to
+                                <a href="#contact">get in touch with me</a>.
+                            </p>
                             <p class="lead">Skills</p>
                             <p>
                                 <strong>Programming Languages</strong>
-                                C, Java, C#, HTML, CSS, Python
+                                Python, Java, Javascript, Swift, Lisp, C, C#, HTML, CSS
                             </p>
                             <p>
                                 <strong>Software</strong>
@@ -80,8 +85,9 @@
                             </p>
                             <p>
                                 <strong>Other</strong>
-                                Photography, WordPress, Graphic Design
+                                Photography, WordPress, Graphic Design, Event Planning
                             </p>
+
                         </div>
                         <!-- <div class="col-md-2">
                             skills here
@@ -94,7 +100,7 @@
             ----------------------------------------------------->
             <section class="parallax photog" id="photog">
                 <div class="container">
-                    <h2>I take photos.</h2>
+                    <h2>I'm a photographer.</h2>
                     <div class="grid">
                         <div class="grid-sizer"></div>
                         <div class="grid-item"><img src="img/firenze.jpg"></div>
@@ -133,6 +139,7 @@
                         <div class="grid-item"><img src="img/art/bb_4x6.png"></div>
                         <div class="grid-item"><img src="img/art/sw_1.png"></div>
                         <div class="grid-item"><img src="img/art/sw_2.png"></div>
+                        <div class="grid-item"><img src="img/art/CKfall2016.png"></div>
                     </div>
                 </div>
             </section>
@@ -199,57 +206,7 @@
         <script src="bootstrap/js/bootstrap.js"></script>
         <script src="js/masonry.pkgd.min.js"></script>
         <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-
-        <!-- Instafeed -->
         <script src="js/instafeed.min.js"></script>
-        <script type="text/javascript">
-            var feed = new Instafeed({
-            get: 'user',
-            // clientId: '3b1848b449134bf3a729d7d66f8780bf',
-            userId: '145082229',
-            // accessToken: '145082229.467ede5.69d79deb01db4acd82956b127a5626c9',
-            accessToken: '145082229.1677ed0.28817a39f8f443fa8cb51367193f25fd',
-            limit: 8,
-            template: '<a href="{{link}}"><img class="feed-img" src="{{image}}" /></a>'
-         });
-         feed.run();
-        </script>
-
-        <!-- Masonry -->
-        <script type="text/javascript">
-            var masonryGrid = $('.grid');
-
-            masonryGrid.imagesLoaded().done(function() {
-                masonryGrid.masonry({
-                  itemSelector: '.grid-item',
-                  columnWidth: '.grid-sizer',
-                  percentPosition: true,
-                });
-            });
-
-            $('a[href*=#]').click(function(event){
-                $('html, body').animate({
-                    scrollTop: $( $.attr(this, 'href') ).offset().top
-                }, 500);
-                event.preventDefault();
-            });
-
-            $(function() {
-
-                $("#slideshow > div:gt(0)").hide();
-
-                setInterval(function() {
-                  $('#slideshow > div:first')
-                    .fadeOut(1000)
-                    .next()
-                    .fadeIn(1000)
-                    .end()
-                    .appendTo('#slideshow');
-                },  3000);
-
-            });
-        </script>
-
-
+        <script src="js/home.js"></script>
     </body>
 </html>
